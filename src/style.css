@@ -28,3 +28,9 @@ textarea {
   width: 100%;
   min-height: 4rem;
 }
+
+@media (prefers-color-scheme: dark) {
+  img {
+    filter: invert(100%);
+  }
+}
