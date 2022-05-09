@@ -1,7 +1,6 @@
 import React from 'react'
-import { render } from 'react-dom'
-import './global.css'
-import './index.html'
+import { createRoot } from 'react-dom/client'
+import './style.css'
 import { Uloha1 } from './Uloha1'
 import { Uloha2 } from './Uloha2'
 import { Uloha3 } from './Uloha3'
@@ -10,8 +9,8 @@ import { Uloha5 } from './Uloha5'
 import { ZaverecnyBonus1 } from './ZaverecnyBonus1'
 import { ZaverecnyBonus2 } from './ZaverecnyBonus2'
 
-render(
-	<>
+const App = () => (
+	<div className="container">
 		<h1>React události</h1>
 		<h2>Úloha 1</h2>
 		<Uloha1 />
@@ -27,6 +26,7 @@ render(
 		<ZaverecnyBonus1 />
 		<h2>Závěrečný bonus 2</h2>
 		<ZaverecnyBonus2 />
-	</>,
-	document.querySelector('#app'),
+	</div>
 )
+
+createRoot(document.querySelector('#app')).render(<App />)
