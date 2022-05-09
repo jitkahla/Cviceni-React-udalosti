@@ -9,6 +9,8 @@ export const NakupniPolozka = ({ nazev }) => {
 
 // Zadání 3: Pomocí `polozky.map` vypiš všechny názvy jako nákupní položky.
 
+// Bonus: Nastav jednotlivým položkám ve výpisu `key`, aby vývojářské nástroje v prohlížeči nezobrazovaly varování. Nápověda: Key musí být v seznamu unikátní. Použij název položky.
+
 export const Uloha5 = () => {
 	const polozky = ['hrušky', 'jablka', 'třešně', 'jahody']
 
